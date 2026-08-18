@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Untuk Kamu ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ============================= -->
+    <!-- BACKGROUND -->
+    <!-- ============================= -->
+
+    <div class="background">
+      <div class="stars"></div>
+      <div class="moon"></div>
+    </div>
+
+    <div id="hearts-container"></div>
+
+    <!-- ============================= -->
+    <!-- MUSIC -->
+    <!-- ============================= -->
+
+    <audio id="music" loop>
+      <source src="music/romantic.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- ============================= -->
+    <!-- INTRO -->
+    <!-- ============================= -->
+
+    <section id="intro" class="screen active">
+      <div class="intro-content">
+        <p class="small-text">Untuk Layla</p>
+
+        <h1>
+          Ada sesuatu<br />
+          yang ingin aku sampaikan.
+        </h1>
+
+        <div class="glowing-heart">❤️</div>
+
+        <button id="openButton" class="main-button">
+          Buka suratku
+          <span>♥</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ENVELOPE -->
+    <!-- ============================= -->
+
+    <section id="envelopeScreen" class="screen">
+      <div class="envelope-wrapper">
+        <div id="envelope" class="envelope">
+          <div class="envelope-back"></div>
+
+          <div class="letter-preview">
+            <p>Untuk kamu...</p>
+
+            <span> ❤️ </span>
+          </div>
+
+          <div class="envelope-front"></div>
+
+          <div class="envelope-flap"></div>
+        </div>
+
+        <p class="envelope-text">
+          Sebuah surat kecil,<br />
+          dari seseorang yang menyayangimu.
+        </p>
+
+        <button id="readButton" class="main-button hidden">
+          Baca suratnya
+          <span>♡</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- LETTER -->
+    <!-- ============================= -->
+
+    <main id="mainContent" class="hidden">
+      <!-- LETTER INTRO -->
+
+      <section class="letter-section">
+        <div class="section-inner">
+          <p class="eyebrow">UNTUK KAMU</p>
+
+          <h2>
+            Kalau kata-kata<br />
+            bisa memelukmu...
+          </h2>
+
+          <div class="divider">
+            <span>♥</span>
+          </div>
+
+          <article class="love-letter">
+            <p>
+              Aku sebenarnya tidak pernah tahu bagaimana cara yang tepat untuk
+              mengatakan semua ini.
+            </p>
+
+            <p>
+              Setiap kali mencoba menyusun kata-kata tentangmu, rasanya semua
+              kata yang aku tahu menjadi terlalu sederhana.
+            </p>
+
+            <p>
+              Karena bagaimana mungkin aku menjelaskan sesuatu yang bahkan
+              hatiku sendiri sulit untuk mengerti?
+            </p>
+
+            <p>Yang aku tahu...</p>
+
+            <p class="highlight">
+              sejak ada kamu, ada sesuatu yang berubah dalam cara aku melihat
+              hari-hari.
+            </p>
+
+            <p>
+              Hari yang biasa saja terasa sedikit lebih indah. Percakapan
+              sederhana terasa lebih berarti. Dan entah kenapa, namamu sering
+              sekali muncul di pikiranku tanpa pernah aku minta.
+            </p>
+
+            <p>Aku suka caramu tersenyum.</p>
+
+            <p>Aku suka caramu bercerita.</p>
+
+            <p>
+              Aku suka hal-hal kecil tentangmu yang mungkin bahkan tidak pernah
+              kamu sadari.
+            </p>
+
+            <p>Tapi lebih dari semuanya...</p>
+
+            <p class="big-highlight">
+              Aku suka bagaimana kehadiranmu membuat semuanya terasa lebih baik.
+            </p>
+
+            <p>
+              Aku tidak ingin berjanji bahwa aku akan menjadi seseorang yang
+              sempurna.
+            </p>
+
+            <p>Karena aku tahu aku tidak sempurna.</p>
+
+            <p>
+              Tapi kalau kamu mengizinkanku, aku ingin menjadi seseorang yang
+              selalu berusaha membuatmu merasa dicintai.
+            </p>
+
+            <p>
+              Seseorang yang mau mendengarkan ceritamu, bahkan ketika ceritanya
+              sudah pernah kamu ceritakan berkali-kali.
+            </p>
+
+            <p>
+              Seseorang yang tetap menggenggam tanganmu ketika hari sedang tidak
+              berpihak kepada kita.
+            </p>
+
+            <p>
+              Seseorang yang ingin melihatmu bahagia, bahkan dalam hal-hal
+              kecil.
+            </p>
+
+            <p class="highlight">
+              Aku tidak tahu akan seperti apa hari-hari kita nanti.
+            </p>
+
+            <p>Tapi kalau aku boleh memilih...</p>
+
+            <p class="big-highlight">aku ingin ada kamu di dalamnya.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- THINGS I LOVE -->
+      <!-- ============================= -->
+
+      <section class="things-section">
+        <div class="section-inner">
+          <p class="eyebrow">HAL-HAL KECIL</p>
+
+          <h2>Hal-hal yang aku suka darimu</h2>
+
+          <div class="cards">
+            <div class="love-card">
+              <div class="card-icon">✨</div>
+
+              <h3>Senyummu</h3>
+
+              <p>
+                Karena entah kenapa, senyummu selalu berhasil membuatku ikut
+                tersenyum.
+              </p>
+            </div>
+
+            <div class="love-card">
+              <div class="card-icon">🌙</div>
+
+              <h3>Ceritamu</h3>
+
+              <p>
+                Bahkan cerita sederhana darimu selalu terasa menarik untuk
+                didengarkan.
+              </p>
+            </div>
+
+            <div class="love-card">
+              <div class="card-icon">🌷</div>
+
+              <h3>Kehadiranmu</h3>
+
+              <p>
+                Karena terkadang kamu tidak perlu melakukan apa-apa untuk
+                membuat hariku menjadi lebih baik.
+              </p>
+            </div>
+
+            <div class="love-card special-card">
+              <div class="card-icon">❤️</div>
+
+              <h3>Kamu</h3>
+
+              <p>
+                Bukan karena kamu sempurna. Tapi karena menjadi dirimu sendiri
+                saja sudah cukup membuatku jatuh hati.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- MEMORIES -->
+      <!-- ============================= -->
+
+      <section class="memory-section">
+        <div class="section-inner">
+          <p class="eyebrow">CERITA KITA</p>
+
+          <h2>
+            Beberapa hal<br />
+            yang ingin aku ingat selamanya
+          </h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">♥</div>
+
+              <div class="timeline-content">
+                <span> AWAL </span>
+
+                <h3>Saat pertama kali bertemu</h3>
+
+                <p>
+                  Mungkin saat itu aku belum tahu kalau seseorang yang sederhana
+                  seperti kamu nantinya akan menjadi seseorang yang begitu
+                  berarti.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot">♥</div>
+
+              <div class="timeline-content">
+                <span> PERTAMA </span>
+
+                <h3>Saat pertama kali berbicara</h3>
+
+                <p>
+                  Percakapan yang mungkin terlihat biasa bagi orang lain, tapi
+                  entah kenapa masih tersimpan dengan baik di kepalaku.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot">♥</div>
+
+              <div class="timeline-content">
+                <span> SEKARANG </span>
+
+                <h3>Hari ini</h3>
+
+                <p>
+                  Hari ketika aku akhirnya memberanikan diri untuk mengatakan
+                  sesuatu yang selama ini mungkin terlalu lama kusimpan.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item future">
+              <div class="timeline-dot">?</div>
+
+              <div class="timeline-content">
+                <span> MASA DEPAN </span>
+
+                <h3>Cerita kita belum selesai.</h3>
+
+                <p>
+                  Dan mungkin... halaman berikutnya bisa kita tulis bersama.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- CINEMATIC -->
+      <!-- ============================= -->
+
+      <section class="cinematic-section">
+        <div class="cinematic-content">
+          <p>Tapi ada satu hal...</p>
+
+          <h2>
+            yang belum pernah<br />
+            benar-benar aku tanyakan.
+          </h2>
+
+          <div class="line"></div>
+
+          <p class="small-cinematic">Dengarkan baik-baik...</p>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- QUESTION -->
+      <!-- ============================= -->
+
+      <section id="question" class="question-section">
+        <div class="question-content">
+          <div class="question-heart">❤️</div>
+
+          <p class="eyebrow">SATU PERTANYAAN</p>
+
+          <h2>
+            Bolehkah aku<br />
+            mencintaimu lebih lama?
+          </h2>
+
+          <p class="question-description">
+            Bukan hanya hari ini. Bukan hanya ketika semuanya mudah. Tapi juga
+            ketika hari sedang berat.
+          </p>
+
+          <p class="question-description">
+            Ketika kita berbeda pendapat. Ketika dunia terasa terlalu ramai. Aku
+            ingin tetap menjadi seseorang yang memilihmu.
+          </p>
+
+          <div class="question-line"></div>
+
+          <h3>Maukah kamu berjalan bersamaku?</h3>
+
+          <div class="answer-buttons">
+            <button id="yesButton" class="answer yes">Iya ❤️</button>
+
+            <button id="alsoYesButton" class="answer also">Aku mau 🤍</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- FINAL -->
+      <!-- ============================= -->
+
+      <section id="final" class="final-section hidden">
+        <div class="final-content">
+          <div class="massive-heart">❤️</div>
+
+          <p class="eyebrow">TERIMA KASIH</p>
+
+          <h2>Kalau begitu...</h2>
+
+          <p class="final-text">Mari kita buat cerita kita sendiri.</p>
+
+          <p class="final-text">
+            Dan kalau suatu hari nanti kita kembali membuka surat ini, semoga
+            kita tersenyum karena ternyata...
+          </p>
+
+          <h3>kita berhasil sampai sejauh ini bersama.</h3>
+
+          <div class="final-signature">
+            <span> Dengan seluruh perasaan yang aku punya, </span>
+
+            <strong> Dimas, seseorang yang memilihmu. ❤️ </strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
